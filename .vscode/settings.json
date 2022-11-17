@@ -1,0 +1,12 @@
+{
+    "calva.replConnectSequences": [
+        {
+            "projectType": "deps.edn",
+            "name": "coding-challenge-clj",
+            "cljsType": "none",
+            "menuSelections": {
+                "cljAliases": ["dev", "test", "+default"]
+            }
+        }
+    ]
+}

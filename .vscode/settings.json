@@ -5,8 +5,34 @@
             "name": "coding-challenge-clj",
             "cljsType": "none",
             "menuSelections": {
-                "cljAliases": ["dev", "test", "+default"]
+                "cljAliases": [
+                    "dev",
+                    "test",
+                    "+default"
+                ]
             }
-        }
-    ]
+        },
+        {
+            "projectType": "deps.edn",
+            "name": "advent-of-code",
+            "cljsType": "none",
+            "menuSelections": {
+                "cljAliases": [
+                    "dev",
+                    "test",
+                    "+advent-of-code"
+                ]
+            }
+        },
+    ],
+    "calva.projectRootsSearchExclude": [
+        "bases",
+        "components"
+    ],
+    "calva.prettyPrintingOptions": {
+        "enabled": true,
+        "printEngine": "pprint",
+        "width": 40
+    },
+    "calva.showDocstringInParameterHelp": true,
 }

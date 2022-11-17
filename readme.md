@@ -1,3 +1,5 @@
+# coding-challenge-clj
+
 <img src="logo.png" width="30%" alt="Polylith" id="logo">
 
 The Polylith documentation can be found here:
@@ -11,4 +13,3 @@ You can also get in touch with the Polylith Team on [Slack](https://clojurians.s
 <h1>coding-challenge-clj</h1>
 
 <p>Add your workspace documentation here...</p>
-# coding-challenge-clj

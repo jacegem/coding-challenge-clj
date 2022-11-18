@@ -4,20 +4,18 @@
 ;; https://adventofcode.com/2021/day/1
 ;; --- Day 1: Sonar Sweep ---
 
+(def sample [199
+             200
+             208
+             210
+             200
+             207
+             240
+             269
+             260
+             263])
 
-(def sample-input [199
-                   200
-                   208
-                   210
-                   200
-                   207
-                   240
-                   269
-                   260
-                   263])
-
-(defn input []
-  (read-numbers 2021 01))
+(def input (read-numbers 2021 01))
 
 (defn part-1 [input]
   (->> input
@@ -27,9 +25,9 @@
        count))
 
 (comment
-  (part-1 sample-input)
+  (part-1 sample)
   ;;=> 7
-  (part-1 (input))
+  (part-1 input)
   :rcf)
 
 ;; part 2
@@ -43,7 +41,7 @@
        count))
 
 (comment
-  (part-2 sample-input)
+  (part-2 sample)
   ;;=> 5
-  (part-2 (input))
+  (part-2 input)
   :rcf)

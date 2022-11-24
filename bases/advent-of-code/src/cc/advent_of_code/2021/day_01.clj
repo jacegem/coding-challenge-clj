@@ -1,5 +1,7 @@
 (ns cc.advent-of-code.2021.day-01
-  (:require [cc.advent-of-code.core :refer [read-numbers]]))
+  (:require [cc.advent-of-code.core :refer [read-numbers]]
+            [clojure.test :refer [run-tests]]
+            [hyperfiddle.rcf :refer [tests]]))
 
 ;; https://adventofcode.com/2021/day/1
 ;; --- Day 1: Sonar Sweep ---
@@ -24,11 +26,10 @@
        (filter true?)
        count))
 
-(comment
-  (part-1 sample)
-  ;;=> 7
-  (part-1 input)
-  :rcf)
+(tests
+ (part-1 sample) := 7
+ (part-1 input) := 1766
+ :rcf)
 
 ;; part 2
 (defn part-2 [input]
@@ -40,8 +41,7 @@
        (filter true?)
        count))
 
-(comment
-  (part-2 sample)
-  ;;=> 5
-  (part-2 input)
-  :rcf)
+(tests
+ (part-2 sample) := 5
+ (part-2 input) := 1797
+ :rcf)

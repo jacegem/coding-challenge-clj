@@ -1,5 +1,7 @@
 (ns cc.advent-of-code.2021.day-02
-  (:require [cc.advent-of-code.core :refer [read-lines]]))
+  (:require [cc.advent-of-code.core :refer [read-lines]]
+            [clojure.core.async :refer [<! >! chan close! go go-loop timeout]]
+            [hyperfiddle.rcf :refer [% tap tests]]))
 
 ;; https://adventofcode.com/2021/day/2
 ;; --- Day 2: Dive! ---
@@ -35,11 +37,11 @@
        (reduce step-1 [0 0])
        (apply *)))
 
-(comment
-  (map read-data sample)
-  (part-1 sample)
-  (part-1 input)
-  :rcf)
+(tests
+ (map read-data sample) :=
+ '((:forward 5) (:down 5) (:forward 8) (:up 3) (:down 8) (:forward 2))
+ (part-1 sample) := 150
+ (part-1 input) := 2019945)
 
 (defn step-2
   "down X increases your aim by X units.
@@ -60,6 +62,6 @@
        (take 2)
        (apply *)))
 
-(comment
-  (part-2 input)
-  :rcf)
+(tests
+ (part-2 sample) := 900
+ (part-2 input) := 1599311480)

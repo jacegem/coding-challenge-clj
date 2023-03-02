@@ -1,16 +1,6 @@
-{:aliases {:dev             {:extra-paths ["development/src"]
-                             :extra-deps  {com.lambdaisland/classpath {:mvn/version "0.0.27"}}}
-
-           :test            {:extra-paths []}
-
-           :poly            {:main-opts  ["-m" "polylith.clj.core.poly-cli.core"]
-                             :extra-deps {polyfy/polylith {:git/url   "https://github.com/polyfy/polylith"
-                                                           :sha       "f15e08ae01ee29d59f7eb1e80f52be6bc19f8eff"
-                                                           :deps/root "projects/poly"}}}
-
-           :reload          {}
-           :+default        {:extra-deps {projects/advent-of-code {:local/root "projects/advent-of-code"}}}
-
-           :+advent-of-code {:extra-paths ["development/cc/src"
-                                           "development/cc/resources"]
-                             :extra-deps  {projects/advent-of-code {:local/root "projects/advent-of-code"}}}}}
+{:paths   ["src" "resources"]
+ :deps    {com.hyperfiddle/rcf {:mvn/version "20220926-202227"}}
+ :aliases {:dev  {:extra-paths ["development"]
+                  :extra-deps  {com.lambdaisland/classpath {:mvn/version "0.0.27"}}}
+           :test {:extra-paths ["test"]
+                  :extra-deps  {}}}}

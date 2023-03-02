@@ -1,4 +1,4 @@
-(ns cc.advent-of-code.2021.day-02
+(ns advent-of-code.2021.day-02
   (:require [cc.advent-of-code.core :refer [read-lines]]
             [clojure.core.async :refer [<! >! chan close! go go-loop timeout]]
             [hyperfiddle.rcf :refer [% tap tests]]))

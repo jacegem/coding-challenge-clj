@@ -1,4 +1,0 @@
-{:paths   ["src" "resources"]
- :deps    {com.hyperfiddle/rcf {:mvn/version "20220926-202227"}}
- :aliases {:test {:extra-paths ["test"]
-                  :extra-deps  {}}}}

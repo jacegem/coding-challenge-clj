@@ -1,4 +1,4 @@
-(ns cc.advent-of-code.2021.day-01
+(ns advent-of-code.2021.day-01
   (:require [cc.advent-of-code.core :refer [read-numbers]]
             [clojure.test :refer [run-tests]]
             [hyperfiddle.rcf :refer [tests]]))

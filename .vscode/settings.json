@@ -12,18 +12,6 @@
                 ]
             }
         },
-        {
-            "projectType": "deps.edn",
-            "name": "advent-of-code",
-            "cljsType": "none",
-            "menuSelections": {
-                "cljAliases": [
-                    "dev",
-                    "test",
-                    "+advent-of-code"
-                ]
-            }
-        },
     ],
     "calva.projectRootsSearchExclude": [
         "bases",

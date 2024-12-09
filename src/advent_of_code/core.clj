@@ -1,5 +1,14 @@
 (ns advent-of-code.core
-  (:require [cc.input.interface :refer [read-file]]))
+  (:require
+   [clojure.java.io :as io]
+   [clojure.string :refer [split-lines trim-newline]]))
+
+(defn read-file [path]
+  (-> path
+      io/resource
+      slurp
+      trim-newline
+      split-lines))
 
 (defn read-lines [year day]
   (-> (format "advent_of_code/%d/day_%02d.txt" year day)
